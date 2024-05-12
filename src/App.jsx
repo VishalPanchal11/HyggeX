@@ -1,10 +1,13 @@
-import Nav from "./assets/Components/Nav";
-
+import Hero from "./Sections/Hero";
+import Nav from "./Sections/Nav";
+import Path from "./Sections/Path";
 
 export default function App() {
   return (
-    <div>
-      <Nav/>
-</div>
-  )
+    <main className="px-[6.5rem] ">
+      <Nav />
+      <Path />
+      <Hero />
+    </main>
+  );
 }
