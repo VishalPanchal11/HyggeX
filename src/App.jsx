@@ -6,12 +6,12 @@ import Path from "./Sections/Path";
 
 export default function App() {
   return (
-    <main className="mx-[6.5rem] mb-[19rem]  ">
+    <main className="px-[6.5rem] max-lg:px-12 max-md:px-6 min-w-[628px] pb-[19rem] max-lg:pb-[10rem] max-md:pb-[5rem]  ">
       <Nav />
       <Path />
       <Hero />
-      <Flashcard/>
-      <FAQ/>
+      <Flashcard />
+      <FAQ />
     </main>
   );
 }
