@@ -39,10 +39,7 @@ plugins: [],
 d. Then erasing all initial code present in "./src/App.jsx" file and adding
 
 export default function App() {  
-return (  
-   <h1 className="text-3xl font-bold underline hidden">  
-   Hello world!  
-   </h1>  
+return (
    )  
    }
 
