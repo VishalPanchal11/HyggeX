@@ -1,51 +1,23 @@
-import { mainList } from "../assets/Constants";
-import hint from "../assets/images/hint.svg";
-import sound from "../assets/images/sound.svg";
 import reload from "../assets/images/reload.svg";
 import fullscreen from "../assets/images/fullscreen.svg";
-import leftArrow from "../assets/images/leftArrow.svg";
-import rightArrow from "../assets/images/rightArrow.svg";
-
+import Options from "../Components/Options";
+import handleClick from "../Components/Options";
+import Slides from "../Components/Slides";
 const Hero = () => {
+  const index=0;
   return (
     <div className="">
       <h1 className="mt-[20px] font-bold text-[2rem] max-md:text-[1.5rem] max-sm:text-base leading-[39px] max-md:leading-[30px] max-sm:leading-5 w-full font-montserrat bg-gradient-to-b from-[#06286E] to-[#164EC0] text-transparent bg-clip-text">
         Relations and Functions ( Mathematics )
       </h1>
       <div className="mt-[56px] flex flex-col items-center justify-center">
-        <div className="flex gap-10 max-lg:gap-[25px] max-md:gap-[15px] max-sm:gap-[0px] ">
-          {mainList.map((item) => (
-            <button className="flex justify-center h-[29px] first:w-[82px] px-6 max-lg:px-5 max-md:px-4 max-sm:px-3 font-medium first:font-bold text-[#696671] first:text-[#06286E] first:border-b-[3px] border-[#06286E] font-inter text-xl leading-[24.2px]  cursor-pointer ">
-              {item}
-            </button>
-          ))}
-        </div>
-        <div className=" flex items-start justify-between my-8 w-[712px] max-md:w-[80%] min-w-[420px]  h-[393.19px] max-md:h-[294px] max-sm:h-[260px] rounded-[42.51px] bg-gradient-to-bl from-[#06286E] to-[#1F80EB]">
-          <button className="relative top-[34.01px] left-[34.01px]">
-            <img src={hint} alt="hint" />
-          </button>
-          <p className="flex h-full items-center text-white leading-[45.91px] font-bold text-[38.26px] font-[Lato] ">
-            9 + 6 + 7x - 2x - 3
-          </p>
-          <button className="relative top-[34.01px] right-[34.01px] ">
-            <img src={sound} alt="sound" />
-          </button>
-        </div>
+        <Options />
+        
         <div className="w-[612px] max-md:w-[306px] flex justify-between items-center h-[60px] ">
-          <button>
+          <button onClick={handleClick(index)}>
             <img src={reload} alt="reload" />
           </button>
-          <div className="flex justify-between items-center max-md:gap-[20px] h-full w-[272px] max-md:w-[160px]">
-            <button>
-              <img src={leftArrow} alt="leftArrow" className="max-md:h-10 max-md:w-10 " />
-            </button>
-            <p className="font-inter text-2xl  text-[#202B37] leading-[29.05px] font-bold ">
-              01/10
-            </p>
-            <button>
-              <img src={rightArrow} alt="rightArrow" className="max-md:h-10 max-md:w-10 " />
-            </button>
-          </div>
+          <Slides/>
           <button>
             <img src={fullscreen} alt="full-screen" />
           </button>

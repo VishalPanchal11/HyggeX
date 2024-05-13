@@ -1,4 +1,4 @@
-import dropdown from "../assets/images/dropdown.svg";
+import Faqna from "../Components/Faqna";
 const FAQ = () => {
   return (
     <div className="w-[53rem] max-lg:w-[80%] max-md:w-full">
@@ -6,36 +6,9 @@ const FAQ = () => {
         FAQ
       </h1>
       <div className="flex flex-col gap-8">
-        <div className="h-[58px]  rounded-[12px] bg-gradient-to-l p-[1px] from-[#082299] to-[#217EEC] ">
-          <div className="flex items-center justify-between px-6 rounded-[11px] bg-white h-[56px] w-full ">
-            <h3 className="leading-[26p] text-base font-inter font-semibold text-[#28262C] ">
-              Can education flashcards be used for all age groups?
-            </h3>
-            <button>
-              <img src={dropdown} alt="show more" />
-            </button>
-          </div>
-        </div>
-        <div className="h-[58px]  rounded-[12px] bg-gradient-to-l p-[1px] from-[#082299] to-[#217EEC] ">
-          <div className="flex items-center justify-between px-6 rounded-[11px] bg-white h-[56px] w-full ">
-            <h3 className="leading-[26p] text-base font-inter font-semibold text-[#28262C] ">
-              How do education flashcards work?
-            </h3>
-            <button>
-              <img src={dropdown} alt="show more" />
-            </button>
-          </div>
-        </div>
-        <div className="h-[58px] rounded-[12px] bg-gradient-to-l p-[1px] from-[#082299] to-[#217EEC] ">
-          <div className="flex items-center justify-between px-6 rounded-[11px] bg-white h-[56px] w-full ">
-            <h3 className="leading-[26p] text-base font-inter font-semibold text-[#28262C] ">
-              Can education flashcards be used for test preparation?
-            </h3>
-            <button>
-              <img src={dropdown} alt="show more" />
-            </button>
-          </div>
-        </div>
+      <Faqna question="Can education flashcards be used for all age groups?" answer="Yes, education flashcards can be adapted for various age groups by adjusting content complexity and engagement techniques."/>
+      <Faqna question="How do education flashcards work?" answer="Education flashcards work by presenting information in a concise format, aiding memory retention through repetition and active recall."/>
+      <Faqna question="Can education flashcards be used for test preparation?" answer="Absolutely, education flashcards are effective tools for test preparation, facilitating review and reinforcement of key concepts."/>
       </div>
     </div>
   );
