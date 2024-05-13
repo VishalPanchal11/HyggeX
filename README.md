@@ -6,17 +6,17 @@ All the code snippets provided can be found on official [tailwindcss](https://ta
 
 a. Creating React project: I installed Tailwind CSS with Vite and created react project.
 
-npm create vite@latest my-project -- --template react (creating a new Vite project if you don’t have one set up already.)
-npm create vite@latest ./ -- --template react (I created in existing current folder.)
+"npm create vite@latest my-project -- --template react" (creating a new Vite project if you don’t have one set up already.)
+"npm create vite@latest ./ -- --template react" (I created in existing current folder.)
 
 b. Installing Tailwind CSS
 
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+"npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p"
 
 c. Configuring template paths: Adding the paths of template files in "./tailwind.config.js" file. Also, I extended some Font-families and box-shadow as per requirement.
 
-/** @type {import('tailwindcss').Config} \*/
+"/** @type {import('tailwindcss').Config} \*/
 export default {
 content: [
 "./index.html",
@@ -34,24 +34,24 @@ boxShadow: {
 },
 },
 plugins: [],
-}
+}"
 
 d. Then erasing all initial code present in "./src/App.jsx" file and adding
 
-export default function App() {
+"export default function App() {
 return (
 
    <h1 className="text-3xl font-bold underline">
    Hello world!
    </h1>
    )
-   }
+   }"
 
 Similarly, erasing all initial code present in "./src/index.css" file and adding
 
-@tailwind base;
+"@tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;"
 
 e. Running build process with "npm run dev": It will run build and host the project on local device.
 
