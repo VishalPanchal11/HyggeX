@@ -10,6 +10,9 @@ export default {
         inter: ['Inter', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      boxShadow: {
+        'circular': '0px 0px 10px 1px  rgba(6, 28, 147, 0.5)',
+      }
     },
   },
   plugins: [],
